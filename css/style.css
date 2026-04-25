@@ -1,0 +1,138 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  overflow-x: hidden;
+}
+
+
+
+.gen_title span {
+  color: #5A73A059;
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+.gen_title {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+
+.gen_article {
+  margin-bottom: 20px;
+}
+
+
+
+.gen_text {
+  color: #fff;
+}
+
+
+
+/* базовое состояние */
+.anim-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+/* появление */
+.anim-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* button:hover {
+  transform: translateY(-3px) scale(1.03);
+} */
+
+.work__wrapper_card,
+.card,
+.mini-card,
+.starting__wrapper_card,
+.sertexity__wrapper_card {
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.work__wrapper_card:hover,
+.card:hover,
+.mini-card:hover,
+.starting__wrapper_card:hover,
+.sertexity__wrapper_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+
+html,
+body {
+  overflow-anchor: none;
+  scroll-behavior: smooth;
+}
+
+.anim-left {
+  opacity: 0;
+  transform: translate3d(-60px, 0, 0);
+  transition: all 0.7s ease;
+}
+
+.anim-left.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.anim-right {
+  opacity: 0;
+  transform: translate3d(60px, 0, 0);
+  transition: all 0.7s ease;
+}
+
+.anim-right.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.anim-fade {
+  opacity: 0;
+  transform: translate3d(0, 25px, 0);
+  transition: all 0.8s ease;
+}
+
+.anim-fade.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.wrapper {
+  background: url("/assests/jpg/bg_1.jpg") no-repeat center / cover;
+  width: 100%;
+}
+
+@media(max-width:1024px){
+  .wrapper{
+    width: 100%;
+  }
+}
+
+
+.gen_article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6vw;
+}
+
+a{
+  text-decoration: none;
+  color: #8E8E8E;
+}
